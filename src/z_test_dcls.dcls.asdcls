@@ -1,0 +1,10 @@
+@EndUserText.label: 'Test DCLS' 
+@MappingRole: true 
+define role z_test_dcls { 
+  grant 
+    select 
+      on 
+        z_test_ddls 
+          where 
+              ( arbgb  ) = aspect pfcg_auth( ztest, arbgb, actvt = '03' );
+}
