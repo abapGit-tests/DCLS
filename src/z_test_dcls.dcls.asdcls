@@ -6,5 +6,5 @@ define role z_test_dcls {
       on 
         z_test_ddls 
           where 
-              ( arbgb  ) = aspect pfcg_auth( ztest, arbgb, actvt = '03' );
+              ( arbgb  ) = aspect pfcg_auth( s_develop, objname, objtype = 'MSAG', actvt = '03' );
 }
